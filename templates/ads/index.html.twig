@@ -2,19 +2,51 @@
 
 {% block title %}Hello AdsController!{% endblock %}
 
-{% block body %}
-<style>
-    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
-    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
-</style>
 
-<div class="example-wrapper">
-    <h1>Hello {{ controller_name }}! ✅</h1>
 
-    This friendly message is coming from:
-    <ul>
-        <li>Your controller at <code><a href="{{ '/Applications/MAMP/htdocs/deliveroo/src/Controller/AdsController.php'|file_link(0) }}">src/Controller/AdsController.php</a></code></li>
-        <li>Your template at <code><a href="{{ '/Applications/MAMP/htdocs/deliveroo/templates/ads/index.html.twig'|file_link(0) }}">templates/ads/index.html.twig</a></code></li>
-    </ul>
-</div>
+
+
+{% block section2 %}
+    <div id="portfolio"></div>
+    <div class="container">
+    <div class="row centered mt grid">
+      <h3>OUR LATEST WORK</h3>
+      <div class="mt"></div>
+      <div class="col-lg-4">
+        <a href="#"><img src="img/01.jpg" alt=""></a>
+      </div>
+      <div class="col-lg-4">
+        <a href="#"><img src="img/02.jpg" alt=""></a>
+      </div>
+      <div class="col-lg-4">
+        <a href="#"><img src="img/03.jpg" alt=""></a>
+      </div>
+    </div>
+
+    <div class="row centered mt grid">
+      <div class="mt"></div>
+      <div class="col-lg-4">
+        <a href="#"><img src="img/04.jpg" alt=""></a>
+      </div>
+      <div class="col-lg-4">
+        <a href="#"><img src="img/05.jpg" alt=""></a>
+      </div>
+      <div class="col-lg-4">
+        <a href="#"><img src="img/06.jpg" alt=""></a>
+      </div>
+    </div>
+
+    <div class="row mt centered">
+      <div class="col-lg-7 col-lg-offset-1 mt">
+        <p class="lead">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever.</p>
+      </div>
+
+      <div class="col-lg-3 mt">
+        <p><button type="button" class="btn btn-theme btn-lg">Email Me!</button></p>
+      </div>
+    </div>
+  </div>
+
+
 {% endblock %}
+
