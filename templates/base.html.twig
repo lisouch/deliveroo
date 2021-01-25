@@ -30,6 +30,7 @@
 		<body data-spy="scroll" data-offset="80" data-target="#thenavbar">
 
 			<!-- Fixed navbar -->
+			{% block navbar %}
 			<div id="thenavbar" class="navbar navbar-default navbar-fixed-top">
 				<div class="container">
 					<div class="navbar-header">
@@ -61,7 +62,9 @@
 					<!--/.nav-collapse -->
 				</div>
 			</div>
+			{% endblock %}
 
+			{% block section1 %}
 			<div id="hello">
 				<div class="container">
 					<div class="row">
@@ -75,6 +78,12 @@
 				</div>
 				<!-- /container -->
 			</div>
+			{% endblock %}
+
+
+			{% block section2 %}
+			{% endblock %}
+
 
 			{% block footer%}
 			<!-- /hello -->
@@ -145,7 +154,6 @@
 				</div>
 
 			</section>
-			{% endblock %}
 
 
 			<div id="copyrights">
@@ -156,6 +164,8 @@
 					</p>
 				</div>
 			</div>
+			{% endblock %}
+
 
 			<!-- JavaScript Libraries -->
 			<script src="{{ asset('assets/js/jquery/jquery.min.js') }}"></script>
