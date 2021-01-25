@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+{# <!DOCTYPE html>
 <html>
     <head>
         <meta charset="UTF-8">
@@ -10,5 +10,176 @@
     <body>
         {% block body %}{% endblock %}
     </body>
-</html>
- 
+</html> #}
+
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta charset="utf-8">
+		<title>
+			{% block title %}Bienvenue chez Food to you
+			{% endblock %}
+		</title>
+		<meta content="width=device-width, initial-scale=1.0" name="viewport">
+		<meta content="repas livraison particulier" name="keywords">
+		<meta content="service de restauration de particuliers à particuliers" name="description">
+
+		<!-- Favicons -->
+		{# <link href="img/favicon.png" rel="icon">
+			<link href="img/apple-touch-icon.png" rel="apple-touch-icon"> #}
+
+		<!-- Google Fonts -->
+		<link rel="preconnect" href="https://fonts.gstatic.com"> <link
+		href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+		<!-- Bootstrap CSS File -->
+		<link href="{{ asset('assets/css/bootstrap/bootstrap.min.css') }}" rel="stylesheet">
+
+		<!-- Libraries CSS Files -->
+		{# <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet"> #}
+
+		<!-- Main Stylesheet File -->
+		<link href="{{ asset('assets/css/style.css') }}" rel="stylesheet">{% block css%}{% endblock %} </head>
+
+		<bodydata-spy="scroll" data-offset="80" data-target="#thenavbar">
+
+			<!-- Fixed navbar -->
+			<div id="thenavbar" class="navbar navbar-default navbar-fixed-top">
+				<div class="container">
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+						<a class="navbar-brand" href="#">
+							<i class="fa fa-bolt"></i>
+						</a>
+					</div>
+					<div class="navbar-collapse collapse">
+						<ul class="nav navbar-nav navbar-right">
+							<li class="active">
+								<a href="#hello" class="smoothscroll">Home</a>
+							</li>
+							<li>
+								<a href="#green" class="smoothscroll">About</a>
+							</li>
+							<li>
+								<a href="#portfolio" class="smoothscroll">Portfolio</a>
+							</li>
+							<li>
+								<a href="#contact" class="smoothscroll">Contact</a>
+							</li>
+						</ul>
+					</div>
+					<!--/.nav-collapse -->
+				</div>
+			</div>
+
+			<div id="hello">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-8 col-lg-offset-2 centered">
+							<h1>Bolt Template</h1>
+							<h2>Awesome Bootstrap Template</h2>
+						</div>
+						<!-- /col-lg-8 -->
+					</div>
+					<!-- /row -->
+				</div>
+				<!-- /container -->
+			</div>
+
+			{% block footer%}
+			<!-- /hello -->
+			<section id="contact">
+				<div id="social">
+					<div class="container">
+						<div class="row centered">
+							<div class="col-lg-8 col-lg-offset-2">
+								<div class="col-md-3">
+									<a href="#">
+										<i class="fa fa-facebook"></i>
+									</a>
+								</div>
+								<div class="col-md-3">
+									<a href="#">
+										<i class="fa fa-dribbble"></i>
+									</a>
+								</div>
+								<div class="col-md-3">
+									<a href="#">
+										<i class="fa fa-twitter"></i>
+									</a>
+								</div>
+								<div class="col-md-3">
+									<a href="#">
+										<i class="fa fa-envelope"></i>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- /container -->
+				</div>
+				<!-- /social -->
+				<div class="container">
+					<div class="row">
+						<div class="col-md-8 col-md-offset-2">
+							<form class="contact-form php-mail-form" role="form" action="contactform/contactform.php" method="POST">
+
+								<div class="form-group">
+									<input type="name" name="name" class="form-control" id="contact-name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
+									<div class="validate"></div>
+								</div>
+								<div class="form-group">
+									<input type="email" name="email" class="form-control" id="contact-email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email">
+									<div class="validate"></div>
+								</div>
+								<div class="form-group">
+									<input type="text" name="subject" class="form-control" id="contact-subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject">
+									<div class="validate"></div>
+								</div>
+
+								<div class="form-group">
+									<textarea class="form-control" name="message" id="contact-message" placeholder="Your Message" rows="5" data-rule="required" data-msg="Please write something for us"></textarea>
+									<div class="validate"></div>
+								</div>
+
+								<div class="loading"></div>
+								<div class="error-message"></div>
+								<div class="sent-message">Your message has been sent. Thank you!</div>
+
+								<div class="form-send">
+									<button type="submit" class="btn btn-large">Send Message</button>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+
+			</section>
+			{% endblock %}
+
+
+			<div id="copyrights">
+				<div class="container">
+					<p>
+						&copy; copyrights
+						<strong>Foood to you</strong>. All Rights Reserved
+					</p>
+				</div>
+			</div>
+
+			<!-- JavaScript Libraries -->
+			<script src="{{ asset('assets/js/jquery/jquery.min.js') }}"></script>
+			<script src="{{ asset('assets/js/bootstrap/bootstrap.min.js') }}"></script>
+			{# <script src="lib/php-mail-form/validate.js"></script>
+							<script src="lib/easing/easing.min.js"></script>
+							<script src="lib/chart/chart.js"></script> #}
+
+			<!-- Template Main Javascript File -->
+			<script src="{{ asset('assets/js/main.js') }} "></script>
+
+		</body>
+	</html>
