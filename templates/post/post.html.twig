@@ -1,0 +1,75 @@
+{% extends 'base.html.twig' %}
+
+{% block css %}<link href="{{ asset('assets/css/lisa.css') }}" rel="stylesheet">{% endblock %} 
+
+{% block title %}Food to you{% endblock %}
+
+{% block header %}
+<div id="thenavbar" class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a href="{{ path('ads') }}">
+                <img class="navLogo" src="{{ asset('assets/img/logofood.jpg') }}" alt="" width="500px">
+            </a>
+        </div>
+      <div class="navbar-collapse collapse">
+        <ul class="nav navbar-nav navbar-right">
+           <li class="active"><a href="#hello" class="smoothscroll">Publier annonce</a></li>
+          <li><a href="#green" class="smoothscroll">Panier</a></li>
+          <li><a href="#portfolio" class="smoothscroll">Déconnexion</a></li>
+        </ul>
+      </div>
+      <!--/.nav-collapse -->
+    </div>
+</div>
+{% endblock %}
+
+{% block main %}
+<div class="post">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6" id="postPresentation">
+                <div class="titlePictureMeal">
+                    <h2> Coucous de Charlotte </h2>
+                    <div class="picture">
+                        <img class="mealPicture" src="{{ asset('assets/img/couscous.jpg') }}" alt="couscous">
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                {# <form action="" method="get">
+                    <div class="form-example">
+                        <label for="name">Description du plat : </label>
+                        <textarea name="name" id="name" required>
+                    </div>
+
+
+                
+                
+                
+                
+                </form> #}
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+{% endblock %}
+
+
+

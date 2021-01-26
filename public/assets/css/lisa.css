@@ -1,13 +1,25 @@
-/* #homeMain{
-    background-color: white;
-    height: fit-content;
-    padding: 3%;
+/******************
+    Navbar modif
+******************/
+.navLogo{
+    height: 10%;
+    width: 30%;
+}
+#thenavbar{
+    padding: 10px 10%;
+}
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:hover, .navbar-default .navbar-nav>.active>a:focus {
+    color: #ffffff;
+    background-color: #03989E;
 }
 
-#logoSubtitle{
-    width: fit-content;
+/******************
+    post annonce
+******************/
+.post{
+    padding-top: 1%;
+} 
+.mealPicture{
+    height: 80%;
+    width: 50%;
 }
-
-.formExample{
-    margin: 1%;
-text-decoration: none;} */
