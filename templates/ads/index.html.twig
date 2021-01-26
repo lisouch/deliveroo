@@ -1,11 +1,33 @@
 {% extends 'base.html.twig' %}
 
 {% block title %}Food To You - Votre site de repas de pap{% endblock %}
-{% block css %}<link href="{{ asset('assets/css/lisa.css') }}" rel="stylesheet">{% endblock %} 
-
+{% block css %}<link href="{{ asset('assets/css/charlotte.css') }}" rel="stylesheet">{% endblock %} 
 
 {% block header %}
-{% endblock %} 
+    <div id="thenavbar" class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a href="{{ path('ads') }}">
+                    <img class="navLogo" src="{{ asset('assets/img/logofood.jpg') }}" alt="">
+                </a>
+            </div>
+        <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav navbar-right">
+            <li class="active"><a href="#hello" class="smoothscroll">Publier annonce</a></li>
+            <li><a href="#green" class="smoothscroll">Panier</a></li>
+            <li><a href="#portfolio" class="smoothscroll">Déconnexion</a></li>
+            </ul>
+        </div>
+        <!--/.nav-collapse -->
+        </div>
+    </div>
+{% endblock %}
+
 
 {% block homeMain %}
 
@@ -13,33 +35,35 @@
     <div class="container">
         <div class="row" id="" >
             <div class="col-lg-6" id="logoSubtitle">
-                <img src="{{ asset('assets/img/logofood.jpg') }}" alt="">
-                <p style="font-weight: bold; margin-top: 20px">Votre site de restauration de <br>particuliers à particuliers</p>
+                <img class="logofood" src="{{ asset('assets/img/logofood.jpg') }}" alt="">
+                <h1>Votre site de restauration de <br>particuliers à particuliers</h1>
             </div>
-            <form action="" method="">
-                <div class="formExample d-">
-                    <input type="text" name="adress" id="adress" placeholder="Entrez votre adresse" required>
-                </div>
-                <div class="formExample">
-                    <select name="meal" id="meal">
-                        <option value="envy" disabled selected>De quoi avez vous envie ?</option>
-                        <option value="pizza">Pizza</option>
-                        <option value="japonese">Japonais</option>
-                        <option value="burger">Burger</option>
-                        <option value="pasta">Pâte</option>
-                        <option value="worldMeal">Plats familiaux</option>
-                    </select>
-                </div
-                <div class="formExample">
-                    <select name="meal" id="meal">
-                        <option value="envy" disabled selected>Vos restrictions alimentaires </option>
-                        <option value="vegan">Vegan</option>
-                        <option value="vegetarien">Vegetarien</option>
-                        <option value="halal">Halal</option>
-                        <option value="cacher">Cacher</option>
-                    </select>
-                </div>
-            </form>        
+            <div class="col-lg-6" id="form">
+                <form action="" method="">
+                    <div class="formExample d-">
+                        <input type="text" name="adress" id="adress" placeholder="Entrez votre adresse" required>
+                    </div>
+                    <div class="formExample">
+                        <select name="meal" id="meal">
+                            <option value="envy" disabled selected>De quoi avez vous envie ?</option>
+                            <option value="pizza">Pizza</option>
+                            <option value="japonese">Japonais</option>
+                            <option value="burger">Burger</option>
+                            <option value="pasta">Pâte</option>
+                            <option value="worldMeal">Plats familiaux</option>
+                        </select>
+                    </div
+                    <div class="formExample">
+                        <select name="meal" id="meal">
+                            <option value="envy" disabled selected>Vos restrictions alimentaires </option>
+                            <option value="vegan">Vegan</option>
+                            <option value="vegetarien">Vegetarien</option>
+                            <option value="halal">Halal</option>
+                            <option value="cacher">Cacher</option>
+                        </select>
+                    </div>
+                </form>   
+            </div>             
         </div>
     </div>
 </div>
