@@ -1,52 +1,52 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Hello AdsController!{% endblock %}
+{% block title %}Food To You - Votre site de repas de pap{% endblock %}
+{% block css %}<link href="{{ asset('assets/css/lisa.css') }}" rel="stylesheet">{% endblock %} 
 
 
+{% block header %}
+{% endblock %} 
 
+{% block homeMain %}
 
-
-{% block section2 %}
-    <div id="portfolio"></div>
+<div id="homeMain">
     <div class="container">
-    <div class="row centered mt grid">
-      <h3>OUR LATEST WORK</h3>
-      <div class="mt"></div>
-      <div class="col-lg-4">
-        <a href="#"><img src="img/01.jpg" alt=""></a>
-      </div>
-      <div class="col-lg-4">
-        <a href="#"><img src="img/02.jpg" alt=""></a>
-      </div>
-      <div class="col-lg-4">
-        <a href="#"><img src="img/03.jpg" alt=""></a>
-      </div>
+        <div class="row" id="" >
+            <div class="col-lg-6" id="logoSubtitle">
+                <img src="{{ asset('assets/img/logofood.jpg') }}" alt="">
+                <p style="font-weight: bold; margin-top: 20px">Votre site de restauration de <br>particuliers à particuliers</p>
+            </div>
+            <form action="" method="">
+                <div class="formExample d-">
+                    <input type="text" name="adress" id="adress" placeholder="Entrez votre adresse" required>
+                </div>
+                <div class="formExample">
+                    <select name="meal" id="meal">
+                        <option value="envy" disabled selected>De quoi avez vous envie ?</option>
+                        <option value="pizza">Pizza</option>
+                        <option value="japonese">Japonais</option>
+                        <option value="burger">Burger</option>
+                        <option value="pasta">Pâte</option>
+                        <option value="worldMeal">Plats familiaux</option>
+                    </select>
+                </div
+                <div class="formExample">
+                    <select name="meal" id="meal">
+                        <option value="envy" disabled selected>Vos restrictions alimentaires </option>
+                        <option value="vegan">Vegan</option>
+                        <option value="vegetarien">Vegetarien</option>
+                        <option value="halal">Halal</option>
+                        <option value="cacher">Cacher</option>
+                    </select>
+                </div>
+            </form>        
+        </div>
     </div>
-
-    <div class="row centered mt grid">
-      <div class="mt"></div>
-      <div class="col-lg-4">
-        <a href="#"><img src="img/04.jpg" alt=""></a>
-      </div>
-      <div class="col-lg-4">
-        <a href="#"><img src="img/05.jpg" alt=""></a>
-      </div>
-      <div class="col-lg-4">
-        <a href="#"><img src="img/06.jpg" alt=""></a>
-      </div>
-    </div>
-
-    <div class="row mt centered">
-      <div class="col-lg-7 col-lg-offset-1 mt">
-        <p class="lead">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever.</p>
-      </div>
-
-      <div class="col-lg-3 mt">
-        <p><button type="button" class="btn btn-theme btn-lg">Email Me!</button></p>
-      </div>
-    </div>
-  </div>
+</div>
 
 
 {% endblock %}
+
+
+
 

@@ -1,0 +1,13 @@
+#homeMain{
+    background-color: white;
+    height: fit-content;
+    padding: 3%;
+}
+
+#logoSubtitle{
+    width: fit-content;
+}
+
+.formExample{
+    margin: 1%;
+text-decoration: none;}

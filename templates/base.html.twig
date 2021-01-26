@@ -3,8 +3,7 @@
 	<head>
 		<meta charset="utf-8">
 		<title>
-			{% block title %}Bienvenue chez Foood to you
-			{% endblock %}
+			{% block title %} Bienvenue chez Foood to you {% endblock %}
 		</title>
 		<meta content="width=device-width, initial-scale=1.0" name="viewport">
 		<meta content="repas livraison particulier" name="keywords">
@@ -25,12 +24,16 @@
 		{# <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet"> #}
 
 		<!-- Main Stylesheet File -->
-		<link href="{{ asset('assets/css/style.css') }}" rel="stylesheet">{% block css%}{% endblock %} </head>
+		<link href="{{ asset('assets/css/style.css') }}" rel="stylesheet">
+		{% block css%}{% endblock %} 
+		
+		
+		</head>
 
 		<body data-spy="scroll" data-offset="80" data-target="#thenavbar">
 
 			<!-- Fixed navbar -->
-			{% block navbar %}
+			{% block header %}
 			<div id="thenavbar" class="navbar navbar-default navbar-fixed-top">
 				<div class="container">
 					<div class="navbar-header">
@@ -63,9 +66,16 @@
 				</div>
 			</div>
 			{% endblock %}
+			
+			{% block main %}
 
-			{% block section1 %}
-			<div id="hello">
+				{% block homeMain %}
+				{% endblock %}
+
+				{% block mealMain %}
+				{% endblock %}
+
+			{# <div id="hello">
 				<div class="container">
 					<div class="row">
 						<div class="col-lg-8 col-lg-offset-2 centered">
@@ -77,13 +87,8 @@
 					<!-- /row -->
 				</div>
 				<!-- /container -->
-			</div>
+			</div> #}
 			{% endblock %}
-
-
-			{% block section2 %}
-			{% endblock %}
-
 
 			{% block footer%}
 			<!-- /hello -->
@@ -154,8 +159,6 @@
 				</div>
 
 			</section>
-
-
 			<div id="copyrights">
 				<div class="container">
 					<p>
