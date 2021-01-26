@@ -24,43 +24,38 @@
 		{# <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet"> #}
 
 		<!-- Main Stylesheet File -->
-		<link href="{{ asset('assets/css/style.css') }}" rel="stylesheet">{% block css %}{% endblock %} </head>
+		<link href="{{ asset('assets/css/style.css') }}" rel="stylesheet">
+		{% block css %}{% endblock %} 
+		
+		
+		</head>
 
 		<body data-spy="scroll" data-offset="80" data-target="#thenavbar">
 
 			<!-- Fixed navbar -->
 			{% block header %}
-			<div id="thenavbar" class="navbar navbar-default navbar-fixed-top">
-				<div class="container">
-					<div class="navbar-header">
-						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-							<span class="icon-bar"></span>
-							<span class="icon-bar"></span>
-							<span class="icon-bar"></span>
-						</button>
-						<a class="navbar-brand" href="#">
-							<i class="fa fa-bolt"></i>
-						</a>
-					</div>
+				<div id="thenavbar" class="navbar navbar-default navbar-fixed-top">
+					<div class="container-fluid">
+						<div class="navbar-header">
+							<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+							</button>
+							<a href="{{ path('ads') }}">
+								<img class="navLogo" src="{{ asset('assets/img/logofood.jpg') }}" alt="">
+							</a>
+						</div>
 					<div class="navbar-collapse collapse">
 						<ul class="nav navbar-nav navbar-right">
-							<li class="active">
-								<a href="#hello" class="smoothscroll">Home</a>
-							</li>
-							<li>
-								<a href="#green" class="smoothscroll">About</a>
-							</li>
-							<li>
-								<a href="#portfolio" class="smoothscroll">Portfolio</a>
-							</li>
-							<li>
-								<a href="#contact" class="smoothscroll">Contact</a>
-							</li>
+						<li class="active"><a href="#hello" class="smoothscroll">Publier annonce</a></li>
+						<li><a href="#green" class="smoothscroll">Panier</a></li>
+						<li><a href="#portfolio" class="smoothscroll">Déconnexion</a></li>
 						</ul>
 					</div>
 					<!--/.nav-collapse -->
+					</div>
 				</div>
-			</div>
 			{% endblock %}
 			
 			{% block main %}
@@ -71,19 +66,6 @@
 				{% block mealMain %}
 				{% endblock %}
 
-			{# <div id="hello">
-				<div class="container">
-					<div class="row">
-						<div class="col-lg-8 col-lg-offset-2 centered">
-							<h1>Bolt Template</h1>
-							<h2>Awesome Bootstrap Template</h2>
-						</div>
-						<!-- /col-lg-8 -->
-					</div>
-					<!-- /row -->
-				</div>
-				<!-- /container -->
-			</div> #}
 			{% endblock %}
 
 			{% block footer%}
