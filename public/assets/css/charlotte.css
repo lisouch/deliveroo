@@ -1,0 +1,28 @@
+#homeMain{
+    background-color: white;
+    height: fit-content;
+    padding: 3%;
+    display: flex;
+}
+
+#logoSubtitle{
+    width: 50%;
+    border: 2px solid black;
+}
+.logofood{
+    width: 80%;
+}
+
+#form{
+    border: 2px solid black;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+}
+
+/* .formExample{
+    margin: 1%;
+text-decoration: none;
+} */
