@@ -2,7 +2,8 @@
 
 {% block title %}Se connecter{% endblock %}
 
-{# 
+{% block css %} <link href="{{ asset('assets/css/soline.css') }}" rel="stylesheet"> {% endblock %} 
+
 {% block header %}
 <div id="thenavbar" class="navbar navbar-default navbar-fixed-top">
     <div class="container-fluid">
@@ -16,39 +17,42 @@
                 <img class="navLogo" src="{{ asset('assets/img/logofood.jpg') }}" alt="" width="500px">
             </a>
         </div>
-      <div class="navbar-collapse collapse">
-        <ul class="nav navbar-nav navbar-right">
-           <li class="active"><a href="#hello" class="smoothscroll">Publier annonce</a></li>
-          <li><a href="#green" class="smoothscroll">Panier</a></li>
-          <li><a href="#portfolio" class="smoothscroll">Déconnexion</a></li>
-        </ul>
-      </div>
+    
       <!--/.nav-collapse -->
     </div>
 </div>
-{% endblock %} #}
+{% endblock %}
 
 {% block main %}
 
-{% block css %} <link href="{{ asset('assets/css/soline.css') }}" rel="stylesheet"> {% endblock %} 
-<h1>Se connecter</h1>
-<div class="container form">
-<form>
-  <div class="col-xs-7">
-    <div class="form-group">
-    <label for="exampleFormControlInput1">Adresse email</label>
-    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="nom@exemple.com">
+
+<div class="container">
+  <h1>Se connecter</h1>
+  <div class="row">
+    <div class="col-lg-6">
+      <figure class="figure">
+        <img src="{{ asset('assets/img/femme_qui_cuisine.jpg') }}" class="figure-img img-fluid " alt="femme qui cuisine" />
+      </figure>
     </div>
-  </div>
- 
-  <div class="col-xs-7">
-    <div class="form-group">
-    <label for="exampleFormControlInput1">Mot de passe</label>
-    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Saisissez votre mot de passe">
-    </div>
-  </div>
-  
-</form>
+
+    <div class="col-lg-6">
+      <form>
+        <div class="form-group">
+          <label for="exampleFormControlInput1">Adresse email</label>
+          <input type="email" class="form-control" name="email" placeholder="nom@exemple.com" required>
+        </div>
+
+        <div class="form-group">
+          <label for="exampleFormControlInput1">Mot de passe</label>
+          <input type="password" class="form-control" name="password" placeholder="Saisissez votre mot de passe" required>
+        </div>
+    
+        <div id="button">
+          <button type="submit" class="btn btn-primary">Se connecter</button>
+        </div>
+      </form>
+    </div> 
+  </div> 
 </div>
 {% endblock %} 
 
