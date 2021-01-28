@@ -1,0 +1,102 @@
+{% extends 'base.html.twig' %}
+
+{% block css %}
+<link href="{{ asset('assets/css/lisa.css') }}" rel="stylesheet">
+{# <link href="{{ asset('assets/css/reset.css') }}" rel="stylesheet"> #}
+
+{% endblock %} 
+
+{% block title %}Food to you - Votre annonce{% endblock %}
+
+{% block header %}
+<div id="thenavbar" class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a href="{{ path('ads') }}">
+                <img class="navLogo" src="{{ asset('assets/img/logofood.jpg') }}" alt="" width="500px">
+            </a>
+        </div>
+      <div class="navbar-collapse collapse">
+        <ul class="nav navbar-nav navbar-right">
+           <li class="active"><a href="#hello" class="smoothscroll">Publier annonce</a></li>
+          <li><a href="#green" class="smoothscroll">Panier</a></li>
+          <li><a href="#portfolio" class="smoothscroll">Déconnexion</a></li>
+        </ul>
+      </div>
+      <!--/.nav-collapse -->
+    </div>
+</div>
+{% endblock %}
+
+{% block main %}
+<div id="post">
+    <div class="title">Aperçu de votre annonce
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6" id="postPresentation">
+                <div class="titlePictureMeal">
+                    <h2 style="font-weight:bold"> COUSCOUS DE CHARLOTTE </h2>
+                    <div class="picture">
+                        <img class="mealPicture" src="{{ asset('assets/img/couscous.jpg') }}" alt="couscous">
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6" id="postDetails">
+                <div class="mealDescription" >
+                    Couscous fait maison, faites le plein de légumes !<br>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet ipsa quod, incidunt optio debitis eius inventore ratione explicabo eligendi magnam, officiis quos aut numquam enim, rem molestiae necessitatibus architecto ipsam!lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet ipsa quod, incidunt optio debitis eius inventore ratione explicabo eligendi magnam, officiis quos aut numquam enim, rem molestiae necessitatibus architecto ipsam
+                </div>
+                <div class="container" id="widthContainer">
+                    <div class="row">
+                        <div class="col-lg-6" id="where">
+                            Où le récupérer ?
+                        </div>
+                        <div class="col-lg-6 price" id="price">
+                            9€90
+                        </div>
+                    </div>
+                </div>
+                <div class="row" id="rowWidth">
+                    <div class="col-lg-6 quantity">
+                        <select name="quantity" id="quantity">
+                            {# <option value="envy" disabled selected>1</option> #}
+                            <option value="one">1</option>
+                            <option value="two">2</option>
+                            <option value="three">3</option>
+                            <option value="four">4</option>
+                            <option value="five">5</option>
+                            <option value="six">6</option>
+                        </select>
+                    </div>
+                    <div class="col-lg-6" id="button">
+                        <div class="button">Ajoutez au panier</div>
+                    </div>
+                </div>
+                <div id="clickOnAdress">                                
+                    <img class="map"src="{{ asset('assets/img/map.jpg') }}" alt="">
+                    <button type="button" id="returnButton">RETOUR</button>
+                </div>
+                <div id="buttons">
+                    <button id="edit">Modifier</button>
+                    <button id="delete">
+                        <a href="" data-confirm="Etes-vous certain de vouloir supprimer?">Supprimer</a>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+{% endblock %}
+
+{% block js %}<script src="{{ asset('assets/js/jquery/lisa.js') }}"></script>{% endblock %}
+
+
+
+

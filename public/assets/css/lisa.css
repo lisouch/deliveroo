@@ -1,13 +1,217 @@
-#homeMain{
+#widthContainer{
+    width: auto;
+}   
+/******************
+    post annonce
+******************/
+#post{
+    /* background-image: url(../img/bgcolor.png); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* height: 500%; */
+} 
+.title{
+    text-align: center;
+    font-size: 2em;
+    padding: 5% 0 2% 0;
+}
+.titlePictureMeal{
+    /* border: 1px solid red; */
+    /* padding-left: 10%; */
+    text-align: center;
+}
+.mealPicture{
+    text-align: center;
+    width: 80%;
+    margin-top: 0.8em;
+    border-radius: 10px;
+}
+.mealDescription{
+    font-size: 1em;
     background-color: white;
+    /* border: 1px solid #d3d3d3; */
+    border-radius: 10px;
+    padding: 1em 0;
+}
+.clickOnAdress{
+    height: 100px;
+    border: 1px solid black;
+}
+#where{
+    font-weight: bold;
+    border: 1px solid #FBB040;
+    border-radius: 10px;
+    padding: 0.8em;
+    margin-right: 19%;   
+    margin-bottom: 2%;
+}
+.price{
+    font-weight: bold;
+    border: 1px solid #03989E;
+    border-radius: 10px;
+    padding: 0.8em;
+    text-align: center;
+    width: 30%;
+    background-color: white;
+}
+.button{
+    border-radius: 10px;
+    border: 1px solid gray;
+    box-shadow: 6px 6px 6px #d3d3d3;    padding: 0.8em;
+    color: white;
+    font-weight: bold;
+    background-color: #03989E;
+    text-align: center;
+}
+#quantity{
+    font-weight: bold;
+    border: 1px solid #d3d3d3;
+    background-color:white;
+    border-radius: 10px;
+    padding: 0.8em 1.5em;
+    margin: 2% 0;
+    width: 46%;
+    text-align: center;
+}
+#returnButton{
+    border-radius: 10px;
+    border: none;
+    box-shadow: 6px 6px 6px #d3d3d3; 
+    margin-top: 5%;   
+    padding: 0.8em;
+    color: white;
+    font-weight: bold;
+    background-color: #03989E;
+    text-align: center; 
+}
+.clickOnAdress{
+    background-color: white;
+    height: 200px;
+}
+#edit, #delete{
+    border: none;
+    color: white;
+    font-weight: bold;
+    padding: 0.5em 2em;
+    margin-top: 5%;
+    border-radius: 10px;
+}
+#edit{
+    background-color: #3CA861;
+}
+#delete{
+    background-color: #D95350;   
+}
+.buttons{
+    display: flex;
+    justify-content: space-around;
+}
+#clickOnAdress{
+    display: flex;
+    flex-direction: column;
+}
+#map{
+    height: 400px;
+}
+a{
+text-decoration: none;
+ color: white;
+}
+
+/******************
+        order
+******************/
+#order{
+    padding-top: 5%;
+}
+.orderTitle{
+    text-align: center;
+    font-size: 2em;
+}
+.meal{
+    text-align: center;
+    margin-top: 5%;
+    font-weight: bold;
+
+}
+.couscousPicture{
+    border-radius: 10px;
+    margin-left: 20%;
+    width: auto;
+    height: auto;
+}
+#adressConfirmation{
+    display: flex;
+    flex-direction: row;
+    margin-top: 5%;
+
+}
+#adressConfirmation p{
+font-weight: bold;
+margin-top: 15%;
+}
+#map{
+    border-radius: 10px;
+}
+#confirmButton{
+    border-radius: 10px;
+    box-shadow: 6px 6px 6px #d3d3d3; 
+    border: none;
+    margin-top: 5%;   
+    padding: 0.8em;
+    color: white;
+    font-weight: bold;
+    background-color: #FBB040;
+    text-align: center;
+}
+.backgroundAlert{
+    background-color: #03989E;
+
+
+}
+
+/******************
+    Media queries
+******************/
+/*  Small devices (landscape phones, 576px and up) */
+@media (max-width: 767px){
+
+.couscousPicture{
+    /* height: 100%;
+    width: 100%; */
+    margin: 0 auto; 
+}
+#adressConfirmation{
+    display: flex;
+    flex-direction: row;
+}
+#backgroundAlert{
     height: fit-content;
-    padding: 3%;
+    background-color: #03989E;
+}
+#confirmButton{
+    /* font-size: 10px; */
+}
+#map{
+
+    
 }
 
-#logoSubtitle{
-    width: fit-content;
 }
 
-.formExample{
-    margin: 1%;
-text-decoration: none;}
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 767.1px) and (max-width: 1199px) {
+    .couscousPicture{
+        /* height: 100%;
+        width: 100%; */
+        margin: 0 auto; 
+    }
+}
+
+/* Large devices (desktops, 1199.1px and up) */
+@media (min-width: 1199.1px) {} 
+
+
+
+
+
