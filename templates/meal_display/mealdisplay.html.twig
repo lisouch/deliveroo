@@ -1,37 +1,10 @@
 {% extends 'base.html.twig' %}
 
+{% block title %}Food to you - Récupérez vite votre repas {% endblock %}
+
 {% block css %}
 <link href="{{ asset('assets/css/lisa.css') }}" rel="stylesheet">
-{# <link href="{{ asset('assets/css/reset.css') }}" rel="stylesheet"> #}
-
 {% endblock %} 
-
-{% block title %}Food to you - Votre annonce{% endblock %}
-
-{% block header %}
-<div id="thenavbar" class="navbar navbar-default navbar-fixed-top">
-    <div class="container-fluid">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a href="{{ path('ads') }}">
-                <img class="navLogo" src="{{ asset('assets/img/logofood.jpg') }}" alt="" width="500px">
-            </a>
-        </div>
-      <div class="navbar-collapse collapse">
-        <ul class="nav navbar-nav navbar-right">
-           <li class="active"><a href="#hello" class="smoothscroll">Publier annonce</a></li>
-          <li><a href="#green" class="smoothscroll">Panier</a></li>
-          <li><a href="#portfolio" class="smoothscroll">Déconnexion</a></li>
-        </ul>
-      </div>
-      <!--/.nav-collapse -->
-    </div>
-</div>
-{% endblock %}
 
 {% block main %}
 <div id="post">
@@ -81,22 +54,13 @@
                     <img class="map"src="{{ asset('assets/img/map.jpg') }}" alt="">
                     <button type="button" id="returnButton">RETOUR</button>
                 </div>
-                <div id="buttons">
-                    <button id="edit">Modifier</button>
-                    <button id="delete">
-                        <a href="" data-confirm="Etes-vous certain de vouloir supprimer?">Supprimer</a>
-                    </button>
-                </div>
             </div>
         </div>
     </div>
 </div>
 
 
+
 {% endblock %}
 
 {% block js %}<script src="{{ asset('assets/js/jquery/lisa.js') }}"></script>{% endblock %}
-
-
-
-
