@@ -18,7 +18,9 @@
             </div>
         <div class="navbar-collapse collapse">
             <ul class="nav navbar-nav navbar-right">
-                <li><a href="#portfolio" class="smoothscroll">Connexion</a></li>
+                <li class="active"><a href="#hello" class="smoothscroll">Publier annonce</a></li>
+                <li><a href="#green" class="smoothscroll">Panier</a></li>
+                <li><a href="#portfolio" class="smoothscroll">Déconnexion</a></li>
             </ul>
         </div>
         <!--/.nav-collapse -->
@@ -28,46 +30,43 @@
 
 
 {% block homeMain %}
-
-<div id="homeMain">
-    <div class="container">
-        <div class="row" id="" >
-            <div class="col-lg-6 col-xs-12" id="logoSubtitle">
-                <img class="logofood" src="{{ asset('assets/img/logofood.jpg') }}" alt="">
-                <h1>Votre site de restauration de <br>particuliers à particuliers</h1>
-            </div>
-            <div class="col-lg-6 col-xs-12" id="form">
-                <form id="formInside" action="" method="">
-                    <div class="formExample">
-                        <input class="form-control" type="text" name="adress" id="adress" placeholder="Entrez votre adresse" required>
-                    </div>
-                    <div class="formExampleMiddle">
-                        <select class="form-control" name="meal" id="meal">
-                            <option value="envy" disabled selected>De quoi avez vous envie ?</option>
-                            <option value="pizza">Pizza</option>
-                            <option value="japonese">Japonais</option>
-                            <option value="burger">Burger</option>
-                            <option value="pasta">Pâte</option>
-                            <option value="worldMeal">Plats familiaux</option>
-                        </select>
-                    </div>
-                    <div class="formExample">
-                        <select class="form-control" name="meal" id="meal">
-                            <option value="envy" disabled selected>Vos restrictions alimentaires </option>
-                            <option value="vegan">Vegan</option>
-                            <option value="vegetarien">Végétarien</option>
-                            <option value="halal">Halal</option>
-                            <option value="cacher">Cacher</option>
-                        </select>
-                   </div>
-                   <div id="buttonForm"> 
-                        <button type="button">Valider</button>
-                   </div> 
-                </form>   
-            </div>             
-        </div>
-    </div>
+<div class="container-fluid" id="daily">
+    <h2 class="dailyH2">Les plats du jour</h2>
 </div>
+
+
+ <div class="container">
+   <div class="row" id="formEdit">
+    <form id="formInside" action="" method="">
+        <div class="col-lg-3">
+            <input type="text" name="adress" id="adress" placeholder="Entrez votre adresse" required>
+        </div>
+        <div class="col-lg-3">
+            <select class="form-control" name="meal" id="meal">
+                <option value="envy" disabled selected>De quoi avez vous envie ?</option>
+                <option value="pizza">Pizza</option>
+                <option value="japonese">Japonais</option>
+                <option value="burger">Burger</option>
+                <option value="pasta">Pâte</option>
+                <option value="worldMeal">Plats familiaux</option>
+            </select>
+        </div>
+        <div class="col-lg-3">
+            <select class="form-control" name="meal" id="meal">
+                <option value="envy" disabled selected>Vos restrictions alimentaires </option>
+                <option value="vegan">Vegan</option>
+                <option value="vegetarien">Végétarien</option>
+                <option value="halal">Halal</option>
+                <option value="cacher">Cacher</option>
+            </select>
+        </div>
+        <div class="col-lg-3"> 
+            <button type="button">Valider</button>
+        </div> 
+    </form>   
+    </div>                      
+</div>
+
 
 <div class="container-fluid" id="blockImg">
     <div class="row centered mt grid">
@@ -102,7 +101,6 @@
         </div>
     </div>
 </div>
-
 {% endblock %}
 
 
