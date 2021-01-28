@@ -18,7 +18,9 @@
             </div>
         <div class="navbar-collapse collapse">
             <ul class="nav navbar-nav navbar-right">
-                <li><a href="#portfolio" class="smoothscroll">Connexion</a></li>
+                <li class="active"><a href="#hello" class="smoothscroll">Publier annonce</a></li>
+                <li><a href="#green" class="smoothscroll">Panier</a></li>
+                <li><a href="#portfolio" class="smoothscroll">Déconnexion</a></li>
             </ul>
         </div>
         <!--/.nav-collapse -->
@@ -32,11 +34,11 @@
 <div id="homeMain">
     <div class="container">
         <div class="row" id="" >
-            <div class="col-lg-6 col-xs-12" id="logoSubtitle">
+            <div class="col-lg-6" id="logoSubtitle">
                 <img class="logofood" src="{{ asset('assets/img/logofood.jpg') }}" alt="">
                 <h1>Votre site de restauration de <br>particuliers à particuliers</h1>
             </div>
-            <div class="col-lg-6 col-xs-12" id="form">
+            <div class="col-lg-6" id="form">
                 <form id="formInside" action="" method="">
                     <div class="formExample">
                         <input class="form-control" type="text" name="adress" id="adress" placeholder="Entrez votre adresse" required>
@@ -68,41 +70,6 @@
         </div>
     </div>
 </div>
-
-<div class="container-fluid" id="blockImg">
-    <div class="row centered mt grid">
-        <div class="mt"></div>
-        <div class="col-lg-4">
-            <h2>Les gyozas de Lisa</h2>
-            <img class="imgDemo" src="{{ asset('assets/img/gyozas-maxime.jpg') }}" alt="">
-        </div>
-        <div class="col-lg-4">
-            <h2>Le pho de Soline</h2>
-            <img class="imgDemo" src="{{ asset('assets/img/pho-alexandre.jpg') }}" alt="">
-        </div>
-        <div class="col-lg-4">
-            <h2>Le Poke de Manel</h2>
-            <img class="imgDemo" src="{{ asset('assets/img/poke-soline.jpg') }}" alt="">
-        </div>
-    </div>
-
-    <div class="row centered mt grid">
-        <div class="mt"></div>
-        <div class="col-lg-4">
-            <h2>Le croque-monsieur de Charlotte</h2>
-           <img class="imgDemo" src="{{ asset('assets/img/croque-melissa.jpg') }}" alt="">
-        </div>
-        <div class="col-lg-4">
-            <h2>Le burger de Maxime</h2>
-            <img class="imgDemo" src="{{ asset('assets/img/burger-manel.jpg') }}" alt="">
-        </div>
-        <div class="col-lg-4">
-            <h2>Les pancakes de Mélissa</h2>
-           <img class="imgDemo" src="{{ asset('assets/img/pancake-lisa.jpg') }}" alt="">
-        </div>
-    </div>
-</div>
-
 {% endblock %}
 
 
