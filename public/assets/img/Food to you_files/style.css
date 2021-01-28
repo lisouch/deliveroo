@@ -212,9 +212,9 @@ hr {
 
 /* Image Opacity */
 
-/* .grid img {
+.grid img {
   opacity: .7;
-} */
+}
 
 .grid img:hover {
   opacity: 1;
