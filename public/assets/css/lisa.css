@@ -110,8 +110,8 @@
     display: flex;
     flex-direction: column;
 }
-.map{
-    height: 300px;
+#map{
+    height: 400px;
 }
 a{
 text-decoration: none;
@@ -191,6 +191,10 @@ margin-top: 15%;
 }
 #confirmButton{
     /* font-size: 10px; */
+}
+#map{
+
+    
 }
 
 }

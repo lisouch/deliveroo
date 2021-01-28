@@ -18,53 +18,51 @@
                 <img src=" {{ asset('assets/img/couscous.jpg') }} " class='img-thumbnail couscousPicture' alt="">
             </div>
         </div>
-        
-                <table class="table table-sm">
-                    <thead>
-                        <tr>
-                            <th scope="col">#</th>
-                            <th scope="col">Quantité</th>
-                            <th scope="col">Plat</th>
-                            <th scope="col">Prix</th>
-                            <th scope="col">Total à régler</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <th scope="row">1</th>
-                            <td>Mark</td>
-                            <td>Otto</td>
-                            <td>@mdo</td>
-                        </tr>
-
-                    </tbody>
-                    </table>
-                <div class="container">
-                    <div class="row">
-                        <div id="backgroundAlert">
-                            <div class="col-lg-8 col-xs-12">
-                                <p>Attention : votre commande est à venir récupérer chez Charlotte (vous aurez l'adresse exacte après le paiement)
-                                </p>
-                            </div>
-                            <div class="col-lg-4 col-xs-12">
-                                <img src="{{ asset('assets/img/map.jpg') }} " class="img-thumbnail" id="map" alt="">
-                            </div>
-                        <div>
+        <div>
+            <table class="table table-sm">
+                <thead>
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Quantité</th>
+                        <th scope="col">Plat</th>
+                        <th scope="col">Prix</th>
+                        <th scope="col">Total à régler</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">1</th>
+                        <td>Mark</td>
+                        <td>Otto</td>
+                        <td>@mdo</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="alert alert-info" role="alert">
+            <div class="container">
+                <div class="row">                        
+                    <div class="col-lg-6 col-xs-12">
+                        <p>Attention : votre commande est à venir récupérer chez Charlotte (vous aurez l'adresse exacte après le paiement)
+                        </p>
+                    </div>
+                    <div class="col-lg-6 col-xs-12">
+                        <img src="{{ asset('assets/img/map.jpg') }} " id="map" alt="">
                     </div>
                 </div>
-                <div class="container">
-                    <div class="row"> 
-                        <div class="col-lg-6 col-xs-6">
-                            <button type="button" id="returnButton">
-                                <a href="#">RETOUR</a>
-                            </button>
-                        </div>
-                        <div class="col-lg-6 col-xs-6">
-                            <button type="button" id="confirmButton">
-                                <a href="#">J'ACCEPTE</a>
-                            </button>
-                        </div>
-                    </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row"> 
+                <div class="col-lg-6 col-xs-6">
+                    <button type="button" id="returnButton">
+                        <a href="#">RETOUR</a>
+                    </button>
+                </div>
+                <div class="col-lg-6 col-xs-6">
+                    <button type="button" id="confirmButton">
+                        <a href="#">J'ACCEPTE</a>
+                    </button>
                 </div>
             </div>
         </div>
